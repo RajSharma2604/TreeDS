@@ -44,7 +44,6 @@ void rightview(Node *root){
         while(size--){
             Node *temp=q.front();
             q.pop();
-            
             if(temp->right)q.push(temp->right);
             if(temp->left)q.push(temp->left);
         }
